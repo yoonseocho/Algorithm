@@ -1,42 +1,35 @@
-# 10845와 똑같지만 '시간초과'를 해결하는 법: pop에서 deque을 쓰자
-
 import sys
 from collections import deque
 
-input = sys.stdin.readline
-
-N = int(input())
-que = deque([])
+N = int(sys.stdin.readline().rstrip())
+deque = deque()
 
 for _ in range(N):
-    cmd = input().rstrip()
+    cmd = sys.stdin.readline().rstrip()
 
-    if "push" in cmd:
-        que.append(int(cmd.split(" ")[1]))
-
-    elif cmd == "pop":
-        if que:
-            print(que.popleft())
+    if(cmd == "pop"):
+        if(deque):
+            print(deque.popleft())
         else:
             print(-1)
-
-    elif cmd == "size":
-        print(len(que))
-
-    elif cmd == "empty":
-        if que:
+    elif(cmd == "size"):
+        print(len(deque))
+    elif(cmd == "empty"):
+        if(deque):
             print(0)
         else:
             print(1)
-
-    elif cmd == "front":
-        if que:
-            print(que[0])
+    elif(cmd == "front"):
+        if(deque):
+            print(deque[0])
         else:
             print(-1)
-
-    elif cmd == "back":
-        if que:
-            print(que[-1])
+    elif(cmd == "back"):
+        if(deque):
+            print(deque[-1])
         else:
             print(-1)
+    else:
+        cmd, val = cmd.split()
+        val = int(val)
+        deque.append(val)
