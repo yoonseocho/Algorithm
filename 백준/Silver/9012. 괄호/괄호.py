@@ -9,13 +9,10 @@ for _ in range(int(input().rstrip())):
     for i in ps:
         if i == "(":
             stk.append(")")
-        elif i == ")":
-            if stk and stk[-1] == ")":
-                stk.pop()
-            else:
-                valid = False
-                break
-    if valid and not stk:
-        print("YES")
-    else:
-        print("NO")
+        elif stk and stk[-1] == i:
+            stk.pop()
+        else:
+            valid = False
+            break
+        
+    print("YES" if valid and not stk else "NO")
