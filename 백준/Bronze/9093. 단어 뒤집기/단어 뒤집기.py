@@ -1,5 +1,4 @@
 for _ in range(int(input())):
-    sentence = list(map(str, input().split()))
-    for i in sentence:
-        print(''.join(reversed(i)), end = " ")
-    print()
+    text = input()
+    text_reversed = text[::-1].split()[::-1]
+    print(' '.join(text_reversed))
