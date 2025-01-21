@@ -19,4 +19,4 @@ for _ in range(int(input().rstrip())):
         print("NO")
         break
 else:
-    print('\n'.join(result)+'\n')
+    print('\n'.join(result))
