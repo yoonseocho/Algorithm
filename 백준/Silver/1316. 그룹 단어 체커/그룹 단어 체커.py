@@ -1,13 +1,9 @@
 import sys
 input = sys.stdin.readline
-N = int(input().rstrip())
-count = N
+count = 0
 
-for _ in range(N):
+for _ in range(int(input().rstrip())):
     word = input().rstrip()
-    for i in range(len(word)-1):
-        if word[i] != word[i+1]:
-            if word[i+1] in word[:i]:
-                count -= 1
-                break
+    if list(word) == sorted(word, key=word.find):
+        count += 1
 print(count)
