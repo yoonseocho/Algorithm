@@ -1,30 +1,15 @@
-from collections import deque
-
 sentence = input()
-stack = []
-dq = deque()
-flag = False
+result = []
+split_by_tag = sentence.split("<")
 
-for s in sentence:
-    if s == "<":
-        if stack:
-            for _ in range(len(stack)):
-                print(stack.pop(), end='')
-        flag = True
-        dq.append(s)
-    elif s == ">":
-        flag = False
-        dq.append(s)
-        for _ in range(len(dq)):
-            print(dq.popleft(), end='')
-    elif flag == True:
-        dq.append(s)
-    elif s == " ":
-        for _ in range(len(stack)):
-            print(stack.pop(), end='')
-        print(" ", end='')
+for word in split_by_tag:
+    if ">" in word:
+        tag, rest = word.split(">")
+        result.append(f'<{tag}>')
+        reversed_rest = ' '.join(m[::-1] for m in rest.split())
+        result.append(reversed_rest)
     else:
-        stack.append(s)
+        just_word = ' '.join(i[::-1] for i in word.split())
+        result.append(just_word)
 
-for _ in range(len(stack)):
-    print(stack.pop(), end='')
+print(''.join(result))
