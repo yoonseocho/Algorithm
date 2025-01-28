@@ -11,10 +11,12 @@ for p in parentheses:
         stack.append(")")
         count += 1
     elif stack and stack[-1] == p:
-        if prev == "(":
+        if prev == "(": # 레이저인 경우
+            stack.pop()
             count -= 1
-            count += len(stack)-1
-        stack.pop()
+            count += len(stack)
+        else: # 막대기의 끝
+            stack.pop() 
     prev = p
 
 print(count)
