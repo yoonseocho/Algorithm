@@ -5,14 +5,14 @@ input = sys.stdin.read
 data = input().splitlines()
 
 for sentence in data:
-    output = [0] * 4
+    l, u, d, b = 0, 0, 0, 0
     for s in sentence:
         if s.islower():
-            output[0] += 1
+            l += 1
         elif s.isupper():
-            output[1] += 1
+            u += 1
         elif s.isdigit():
-            output[2] += 1
-        else:
-            output[3] += 1
-    print(*output)
+            d += 1
+        elif s.isspace():
+            b += 1
+    print(l, u, d, b)
