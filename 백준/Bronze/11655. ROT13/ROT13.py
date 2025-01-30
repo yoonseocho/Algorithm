@@ -1,26 +1,17 @@
 string = input()
 output = []
 
-ROT13_dict = {}
-
-k = 0
-for i in range(ord('A'), ord('Z')+1):
-    if chr(i+13) > 'Z':
-        ROT13_dict[chr(i)] = chr(ord('A')+ k)
-        k += 1
-    else:
-        ROT13_dict[chr(i)] = chr(i+13)
-
-j = 0
-for i in range(ord('a'), ord('z')+1):
-    if chr(i+13) > 'z':
-        ROT13_dict[chr(i)] = chr(ord('a')+ j)
-        j += 1
-    else:
-        ROT13_dict[chr(i)] = chr(i+13)
-
 for s in string:
-    if s.isalpha():
-        print(ROT13_dict[s], end='')
+    if "A" <= s <= "Z":
+        char_code = ord(s) - ord('A')
+        rotated_code = (char_code + 13) % 26
+        new_code = chr(rotated_code + ord('A'))
+        output.append(new_code)
+    elif "a" <= s <= "z":
+        char_code = ord(s) - ord('a')
+        rotated_code = (char_code + 13) % 26
+        new_code = chr(rotated_code + ord('a'))
+        output.append(new_code)
     else:
-        print(s, end='')
+        output.append(s)
+print(''.join(output))
