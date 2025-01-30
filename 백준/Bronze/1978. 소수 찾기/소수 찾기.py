@@ -1,13 +1,11 @@
 N = int(input())
 nums = list(map(int, input().split()))
-tmp = 0
 count = 0
 
 for num in nums:
-    tmp = 0
-    for i in range(1, num):
-        if num / i == num // i:
-            tmp += 1
-    if tmp == 1:
-        count += 1
+    for i in range(2, num+1):
+        if num % i == 0:
+            if num == i:
+                count += 1
+            break
 print(count)
