@@ -3,10 +3,9 @@ input = sys.stdin.readline
 
 def count_k(n, k):
     result = 0
-    power = k
-    while power <= n:
-        result += n // power
-        power *= k
+    while n >= k:
+        result += n//k
+        n //= k
     return result
 
 n, m = map(int, input().rstrip().split())
