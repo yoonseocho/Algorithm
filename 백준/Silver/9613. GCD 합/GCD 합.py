@@ -1,10 +1,16 @@
 import math
+import sys
 
-for _ in range(int(input())):
-    test_case = list(map(int, input().split()))
-    test_case.pop(0)
+input = sys.stdin.read
+
+data = input().splitlines()
+
+n = int(data[0])
+
+for i in range(1, n+1):
+    test_case = list(map(int, data[i].split()))
     result = 0
-    for i in range(len(test_case)-1):
-        for j in range(i+1, len(test_case)):
-            result += math.gcd(test_case[i], test_case[j])
+    for j in range(1, len(test_case)-1):
+        for k in range(j+1, len(test_case)):
+            result += math.gcd(test_case[j], test_case[k])
     print(result)
