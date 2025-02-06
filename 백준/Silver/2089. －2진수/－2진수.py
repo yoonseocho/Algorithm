@@ -4,7 +4,6 @@ output = []
 
 if n == 0:
     print(0)
-    exit()
 
 while n:
     if n % (-2):
