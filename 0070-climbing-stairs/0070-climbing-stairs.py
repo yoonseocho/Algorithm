@@ -1,18 +1,15 @@
 from collections import deque
 
+memo = {}
+
 class Solution:
     def climbStairs(self, n: int) -> int:
-        q = deque()
-        q.append(n)
-        count = 0
-
-        while q:
-            cur_pos = q.popleft()
+        if n == 1:
+            return 1
+        elif n == 2:
+            return 2
         
-            for next_pos in (cur_pos-1, cur_pos-2):
-                if next_pos == 0:
-                    count += 1
-                elif next_pos > 0:
-                    q.append(next_pos)
-        return count
+        if n not in memo:
+            memo[n] = self.climbStairs(n-1) + self.climbStairs(n-2)
+        return memo[n]
             
