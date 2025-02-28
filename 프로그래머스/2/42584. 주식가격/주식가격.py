@@ -1,12 +1,13 @@
 def solution(prices):
-    stack = []
-    answer = [0] * len(prices)
-    
-    for idx, price in enumerate(prices):
-        while stack and stack[-1][1] > price:
-            prev_sec, _ = stack.pop()
-            answer[prev_sec] = idx - prev_sec
-        stack.append((idx, price))
-    for idx, val in stack:
-        answer[idx] = len(prices) - 1 - idx
-    return answer
+    count = 0
+    output = []
+    for i in range(len(prices)):
+        for j in range(i+1, len(prices)):
+            if prices[i] <= prices[j]:
+                count += 1
+            else:
+                count += 1
+                break
+        output.append(count)
+        count = 0
+    return output
