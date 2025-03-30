@@ -1,17 +1,17 @@
 from collections import deque
 
-def bfs(maps, x, y):
+def bfs(maps):
     delta = [(0, 1), (0, -1), (1, 0), (-1, 0)]
-   
+    
     row = len(maps)
     col = len(maps[0])
     
     q = deque()
-    q.append((x, y))
+    q.append((0, 0))
     
     while q:
         x, y = q.popleft()
-        
+    
         for dx, dy in delta:
             next_x = x + dx
             next_y = y + dy
@@ -20,8 +20,8 @@ def bfs(maps, x, y):
                 if maps[next_x][next_y] == 1:
                     maps[next_x][next_y] = maps[x][y] + 1
                     q.append((next_x, next_y))
-                    
-    return maps[row-1][col-1] if maps[row-1][col-1] > 1 else -1
+    
+    return maps[row - 1][col - 1] if maps[row - 1][col - 1] > 1 else -1
 
 def solution(maps):
-    return bfs(maps, 0, 0)
+    return bfs(maps)
