@@ -1,44 +1,43 @@
 import sys
-from itertools import permutations
 
 input = sys.stdin.readline
 
-def solution():
-    ops = []
-    for i, cnt in enumerate(op_list):
-        if i == 0:
-            ops += ['+'] * cnt
-        elif i == 1:
-            ops += ['-'] * cnt
-        elif i == 2:
-            ops += ['*'] * cnt
-        else:
-            ops += ['/'] * cnt
-    op_perms = set(permutations(ops))
-    
-    results = []
+max_val = -float('inf')
+min_val = float('inf')
 
-    for op_seq in op_perms:
-        result = num_list[0]
-        for i in range(1, n):
-            if op_seq[i - 1] == '+':
-                result += num_list[i]
-            elif op_seq[i - 1] == '-':
-                result -= num_list[i]
-            elif op_seq[i - 1] == '*':
-                result *= num_list[i]
-            if op_seq[i - 1] == '/':
+def dfs(idx, result):
+    global max_val, min_val
+
+    if idx == n:
+        max_val = max(max_val, result)
+        min_val = min(min_val, result)
+        return
+
+    for i in range(4):
+        if op_list[i] > 0:
+            op_list[i] -= 1
+
+            if i == 0:
+                next_result = result + num_list[idx]
+            elif i == 1:
+                next_result = result - num_list[idx]
+            elif i == 2:
+                next_result = result * num_list[idx]
+            elif i == 3:
                 if result < 0:
-                    result = -(-result // num_list[i])
+                    next_result = -(-result // num_list[idx])
                 else:
-                    result //= num_list[i]
-                
-        results.append(result)
-    print(max(results))
-    print(min(results))
+                    next_result = result // num_list[idx]
+
+            dfs(idx + 1, next_result)
+            op_list[i] += 1
+
+
         
 n = int(input())
 num_list = list(map(int, input().split()))
 op_list = list(map(int, input().split()))
 
-solution()
+dfs(1, num_list[0])
+print(max_val)
+print(min_val)
