@@ -1,31 +1,38 @@
 import sys
-from itertools import combinations
 
 input = sys.stdin.readline
 
-
-def solution():
+def divide_team():
     global min_diff
     
-    comb = list(combinations(member_list, n//2))
+    start_score = 0
+    link_score = 0
 
-    for team in comb:
-        start_team = list(team)
-        link_team = list(set(member_list) - set(start_team))
+    for i in range(n):
+        for j in range(i+1, n):
+            if visited[i] and visited[j]:
+                start_score += s[i][j] + s[j][i]
+            elif not visited[i] and not visited[j]:
+                link_score += s[i][j] + s[j][i]
+    
+    diff = abs(start_score - link_score)
+    min_diff = min(min_diff, diff)
 
-        start_score = 0
-        link_score = 0
+    if min_diff == 0:
+        print(0)
+        sys.exit()
 
-        for i, j in combinations(start_team, 2):
-            start_score += s[i][j] + s[j][i]
-        for i, j in combinations(link_team, 2):
-            link_score += s[i][j] + s[j][i]
 
-        min_diff = min(min_diff, abs(start_score - link_score))
-
-        if min_diff == 0:
-            break
-    return min_diff
+def dfs(idx, current_people):
+    if current_people == n // 2:
+        divide_team()
+        return
+    
+    for i in range(idx, n):
+        if not visited[i]:
+            visited[i] = True
+            dfs(i + 1, current_people + 1)
+            visited[i] = False
 
 n= int(input())
 s = [list(map(int, input().split())) for _ in range(n)]
@@ -33,4 +40,9 @@ s = [list(map(int, input().split())) for _ in range(n)]
 member_list = [i for i in range(n)]
 min_diff = float('inf')
 
-print(solution())
+visited = [False] * n
+
+
+visited[0] = True
+dfs(1, 1)
+print(min_diff)
