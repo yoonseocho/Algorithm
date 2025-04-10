@@ -22,6 +22,9 @@ def solution():
             link_score += s[i][j] + s[j][i]
 
         min_diff = min(min_diff, abs(start_score - link_score))
+
+        if min_diff == 0:
+            break
     return min_diff
 
 n= int(input())
