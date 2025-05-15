@@ -5,20 +5,16 @@ class Solution:
         if x < 0:
             sign = -1
             
-        x = abs(x)
-        output = []
+        rev, x = 0, abs(x)
 
-        if x == 0:
-            return 0
         while x:
-            output.append(x % 10)
-            x //= 10
+            x, mod = divmod(x, 10)
+            rev = rev * 10 + mod
         
-        print(int(''.join(map(str, output))))
-        reverse_x = sign * int(''.join(map(str, output)))
+        output = sign * rev
         
-        if reverse_x > 2**31 or reverse_x < - 2**31:
+        if output > 2**31 or output < - 2**31:
             return 0
         else:
-            return reverse_x
+            return output
         
