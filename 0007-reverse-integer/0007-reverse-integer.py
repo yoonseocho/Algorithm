@@ -7,14 +7,12 @@ class Solution:
             
         x = abs(x)
         output = []
-      
-        while True:
-            if x // 10 == 0:
-                output.append(x % 10)
-                break
+
+        if x == 0:
+            return 0
+        while x:
             output.append(x % 10)
             x //= 10
-            print(x)
         
         print(int(''.join(map(str, output))))
         reverse_x = sign * int(''.join(map(str, output)))
