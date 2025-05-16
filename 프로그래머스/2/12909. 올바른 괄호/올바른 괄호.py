@@ -2,13 +2,11 @@ def solution(s):
     stk = []
     
     for p in s:
-        if stk and stk[-1] != p:
-            stk.pop()
-        else:
+        if p == "(":
             stk.append(p)
-            if stk[0] == ")":
+        elif p == ")":
+            try:
+                stk.pop()
+            except:
                 return False
-    if stk:
-        return False
-    else:
-        return True
+    return len(stk) == 0
