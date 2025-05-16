@@ -5,8 +5,8 @@ def solution(s):
         if p == "(":
             stk.append(p)
         elif p == ")":
-            try:
+            if stk:
                 stk.pop()
-            except:
+            else:
                 return False
     return len(stk) == 0
