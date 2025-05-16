@@ -1,12 +1,10 @@
-import math
-
 def solution(progresses, speeds):
     days = []
     stk = []
     answer = []
     
-    for i in range(len(progresses)):
-        day = math.ceil((100 - progresses[i]) / speeds[i])
+    for p, s in zip(progresses, speeds):
+        day = - ((p - 100) // s)
         days.append(day)
 
     for day in days:
