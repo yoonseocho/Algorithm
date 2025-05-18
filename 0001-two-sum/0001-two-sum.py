@@ -1,7 +1,13 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums_dict = {}
-        for i, num in enumerate(nums):
-            if target - num in nums_dict:
-                return [nums_dict[target - num], i]
-            nums_dict[num] = i
+        memo = {}
+
+        for i in range(len(nums)):
+            memo[nums[i]] = i
+        
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in memo and memo[complement] != i:
+                return [i, memo[complement]]
+
+            
