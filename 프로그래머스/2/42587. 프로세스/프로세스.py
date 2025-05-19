@@ -15,5 +15,3 @@ def solution(priorities, location):
             cnt += 1
         else:
             q.append(q.popleft())
-            
-    
