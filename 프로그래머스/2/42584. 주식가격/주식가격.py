@@ -1,5 +1,4 @@
 def solution(prices):
-    stk = []
     answer = [0] * len(prices)
     
     for i in range(len(prices)):
