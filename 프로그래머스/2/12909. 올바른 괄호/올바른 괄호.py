@@ -3,10 +3,10 @@ def solution(s):
     
     for p in s:
         if p == "(":
-            stk.append(p)
-        elif p == ")":
+            stk.append("(")
+        else:
             if stk:
                 stk.pop()
             else:
                 return False
-    return len(stk) == 0
+    return True if not stk else False
