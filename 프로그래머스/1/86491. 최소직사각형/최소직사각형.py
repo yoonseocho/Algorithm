@@ -3,12 +3,8 @@ def solution(sizes):
     short_sides = []
     
     for size in sizes:
-        big = max(size)
-        short = min(size)
+        long_sides.append(max(size))
+        short_sides.append(min(size))
+    
+    return max(long_sides)*max(short_sides)
         
-        long_sides.append(big)
-        short_sides.append(short)
-    
-    return max(long_sides) * max(short_sides)
-    
-    
