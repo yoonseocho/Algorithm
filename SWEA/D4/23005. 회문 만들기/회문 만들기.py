@@ -5,23 +5,20 @@ for test_case in range(1, T + 1):
     left = 0
     right = len(s)-1
     cnt = 0
-    flag = False
+    possible = True
     
     while left < right:
         if s[left] == s[right]:
             left += 1
             right -= 1
+        elif s[left] == 'x':
+            left += 1
+            cnt += 1
+        elif s[right] == 'x':
+            right -= 1
+            cnt += 1
         else:
-            if s[left] != 'x' and s[right] != 'x':
-                flag = True
-                break
-            else:
-                if s[left] == 'x':
-                    left += 1
-                else:
-                    right -= 1
-                cnt += 1
-    if flag:
-        print(-1)
-    else:
-        print(cnt)
+            possible = False
+            break
+    
+    print(cnt if possible else -1)
