@@ -2,13 +2,9 @@ def solution(s):
     stk = []
     
     for char in s:
-        if char == "(":
-            stk.append(")")
+        if stk and char == ")":
+            stk.pop()
         else:
-            if stk:
-                if stk[-1] == char:
-                    stk.pop()
-            else:
-                return False
+            stk.append("(")
+    
     return False if stk else True
-            
