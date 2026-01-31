@@ -1,23 +1,21 @@
+import math
+
 def solution(progresses, speeds):
     days = []
-    stk = []
-    answer = []
-    
-    for p, s in zip(progresses, speeds):
-        day = - ((p - 100) // s)
+    for progress, speed in zip(progresses, speeds):
+        day = math.ceil((100-progress)/speed)
         days.append(day)
-
+    
+    answer = []
+    max_num = -1
+    cnt = 0
     for day in days:
-        if not stk or (stk and stk[0] >= day):
-            stk.append(day)
-        elif stk and stk[0] < day:
-            cnt = 0
-            while stk and stk[0] < day:
-                stk.pop()
-                cnt += 1
-            answer.append(cnt)
-            stk.append(day)
- 
-    if stk:
-        answer.append(len(stk))
+        if day > max_num:
+            max_num = day
+            if cnt != 0:
+                answer.append(cnt)
+            cnt = 1
+        else:   
+            cnt += 1
+    answer.append(cnt)
     return answer
