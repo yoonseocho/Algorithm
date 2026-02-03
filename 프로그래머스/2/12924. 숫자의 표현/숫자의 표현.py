@@ -1,12 +1,16 @@
 def solution(n):
+    start, end = 1, 1
+    total_sum = 1
     cnt = 0
-    for i in range(1, n+1):
-        total_sum = 0
-        for j in range(i, n+1):
-            total_sum += j
-            if total_sum > n:
-                break
-            elif total_sum == n:
-                cnt += 1
-                break
+    while start <= n:
+        if total_sum < n:
+            end += 1
+            total_sum += end
+        elif total_sum == n:
+            cnt += 1
+            total_sum -= start
+            start += 1
+        else:
+            total_sum -= start
+            start += 1
     return cnt
