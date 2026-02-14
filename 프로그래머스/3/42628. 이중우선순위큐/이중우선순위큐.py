@@ -1,3 +1,5 @@
+from heapq import heapify, heappop
+
 def solution(operations):
     q = []
     
@@ -6,10 +8,9 @@ def solution(operations):
         if cmd == "I":
             q.append(int(data))
         elif q and data == "1":
-            q.sort()
-            q.pop()
+            q.remove(max(q))
         elif q and data == "-1":
-            q.sort(reverse=True)
-            q.pop()
-
-    return [max(q), min(q)] if q else [0, 0]
+            heapify(q)
+            heappop(q)
+    
+    return [max(q), min(q)] if q else [0,0]
