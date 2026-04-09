@@ -1,11 +1,7 @@
 def solution(arr):
-    stk = []
-    
-    for num in arr:
-        if stk and stk[-1] == num:
+    ans = []
+    for i in range(len(arr)):
+        if ans and arr[i] == ans[-1]:
             continue
-        else:
-            stk.append(num)
-    return stk
-        
-            
+        ans.append(arr[i])
+    return ans
