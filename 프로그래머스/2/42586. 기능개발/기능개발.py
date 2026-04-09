@@ -1,16 +1,23 @@
+import math
+
 def solution(progresses, speeds):
     days = []
     for progress, speed in zip(progresses, speeds):
-        day = -((progress-100)//speed)
+        day = math.ceil((100-progress) / speed)
         days.append(day)
-    
-    release = []
-    max_num = 0
-    for day in days:
-        if day > max_num:
-            max_num = day
-            release.append(1)
-        else:   
-            release[-1] += 1
-    
-    return release
+    # 7 3 9 -> 2 1
+    current = days[0]
+    cnt = 1
+    ans = []
+    for i in range(1, len(days)):
+        if current >= days[i]:
+            cnt += 1
+        else:
+            ans.append(cnt)
+            current = days[i]
+            cnt = 1
+    ans.append(cnt)
+    return ans
+        
+        
+            
