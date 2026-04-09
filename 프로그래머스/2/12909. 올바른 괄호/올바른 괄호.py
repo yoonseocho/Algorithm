@@ -1,12 +1,12 @@
 def solution(s):
     stk = []
     
-    for char in s:
-        if char == "(":
-            stk.append("(")
-        else:
-            if not stk:
-                return False
+    for p in s:
+        if not stk and p == ")":
+            return False
+        if stk and p == ")":
             stk.pop()
+            continue
+        stk.append("(")
     
-    return False if stk else True
+    return True if not stk else False
