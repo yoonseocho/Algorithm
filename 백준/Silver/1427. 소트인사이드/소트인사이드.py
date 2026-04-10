@@ -1,3 +1,4 @@
-N = input()
-sorted_list = sorted(N, reverse=True)
-print(''.join(sorted_list))
+import sys
+
+N = sys.stdin.readline().strip()
+print("".join(sorted(N, reverse=True)))
