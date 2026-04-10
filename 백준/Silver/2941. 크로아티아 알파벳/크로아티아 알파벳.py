@@ -1,6 +1,9 @@
 import sys
 
 word = sys.stdin.readline().strip()
+croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-word = word.replace("c=", " ").replace("c-", " ").replace("dz=", " ").replace("d-", " ").replace("lj", " ").replace("nj", " ").replace("s=", " ").replace("z=", " ")
+for c in croatia:
+    word = word.replace(c, "*")
+
 print(len(word))
