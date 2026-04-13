@@ -9,18 +9,18 @@ for _ in range(N):
     DNA = input().strip()
     DNAs.append(DNA)
 
-best_char = []
+s = ""
+total_dist = 0
 for col in zip(*DNAs):
     counts = Counter(col)
+    
     best = max(sorted(counts.keys()), key=counts.get)
-    best_char.append(best)
+    s += best
 
-s = ''.join(best_char)
-cnt = 0
-for a, s in zip(DNAs, [s]*len(DNAs)):
-    for char_a, char_s in zip(a, s):
-        if char_a != char_s:
-            cnt += 1
+    total_dist += N - counts[best]
+
 print(s)
-print(cnt)
+print(total_dist)
+
+
 
