@@ -1,17 +1,13 @@
 from itertools import permutations
 
-x = list(input().strip())
+X_str = input().strip()
+X_int = int(X_str)
 
-cases = list(permutations(x, len(x)))
-nums = []
-for case in cases:
-    num = int(''.join(case))
-    nums.append(num)
-nums = list(set(nums))
-nums.sort()
-for i in range(len(nums)-1):
-    if nums[i] == int(''.join(x)):
-        print(nums[i+1])
+cases = sorted({int(''.join(p)) for p in permutations(X_str)})
+
+result = 0
+for n in cases:
+    if n > X_int:
+        result = n
         break
-else:
-    print(0)
+print(result)
