@@ -1,10 +1,16 @@
-from itertools import product
-
 n, m = map(int, input().split())
 
-nums = [num for num in range(1, n+1)]
+path = []
+def backtracking(depth):
+    if depth == m:
+        print(*path)
+        return
+    
+    for i in range(1, n+1):
+        path.append(i)
 
-cases = product(nums, repeat=m)
+        backtracking(depth+1)
 
-for case in cases:
-    print(*case)
+        path.pop()
+
+backtracking(0)
