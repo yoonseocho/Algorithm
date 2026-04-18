@@ -1,10 +1,20 @@
-from itertools import combinations
-
 n, m = map(int, input().split())
 
-nums = [num for num in range(1, n+1)]
+path = []
+visited = [False] * (n+1)
+def backtracking(start, depth):
+    if depth == m:
+        print(*path)
+        return
+    
+    for i in range(start, n+1):
+        if not visited[i]:
+            visited[i] = True
+            path.append(i)
 
-cases = combinations(nums, m)
+            backtracking(i+1, depth+1)
 
-for case in cases:
-    print(*case)
+            path.pop()
+            visited[i] = False
+
+backtracking(1, 0)
