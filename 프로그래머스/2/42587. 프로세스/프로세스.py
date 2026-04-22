@@ -6,16 +6,14 @@ def solution(priorities, location):
     for idx, p in enumerate(priorities):
         q.append((idx, p))
     
-    max_num = max(priorities)
-    result = []
+    priorities.sort(reverse=True)
+    
+    answer = 0
     while q:
         each = q.popleft()
-        if each[1] < max_num:
+        if each[1] < priorities[answer]:
             q.append(each)
         else:
-            result.append(each)
-            if q:
-                max_num = max(q, key = lambda x: x[1])[1]
-    for i, (idx, _) in enumerate(result):
-        if idx == location:
-            return i + 1
+            answer += 1
+            if location == each[0]:
+                return answer
