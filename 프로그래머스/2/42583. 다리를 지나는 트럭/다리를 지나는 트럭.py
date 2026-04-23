@@ -1,27 +1,30 @@
 from collections import deque
 
-
 def solution(bridge_length, weight, truck_weights):
+    q = deque([each for each in truck_weights])
+    on_bridges = deque()
+    
     time = 0
-    bridge = deque([0]*bridge_length)
-    truck_weights = deque(truck_weights)
-    
-    current_weight = 0
-    
-    while bridge:
+    while True:
+        if not q and not on_bridges:
+            break
         time += 1
-        # 1. 다리에서 트럭 (혹은 빈 공간 0)이 나감
-        exited = bridge.popleft()
-        current_weight -= exited
         
-        # 2. 다음 트럭이 다리에 올라올 수 있는지 확인
-        if truck_weights:
-            if truck_weights[0] + current_weight <= weight:
-                new_truck = truck_weights.popleft()
-                bridge.append(new_truck)
-                current_weight += new_truck
-            else:
-                bridge.append(0)
-    
+        # 다리 위 탈출 조건
+        if on_bridges and on_bridges[0][1] == bridge_length:
+            on_bridges.popleft()
+        
+        # 다리 위에 올라갈 조건
+        if q and q[0] + sum(weight for weight, _ in on_bridges) <= weight and len(on_bridges) + 1 <= bridge_length:
+            curr = q.popleft()
+            on_bridges.append([curr, 0])
+            
+        for on_bridge in on_bridges:
+            on_bridge[1] += 1
+        
+        # print(time, q, on_bridges)
+        
+            
+        
     return time
-    
+        
