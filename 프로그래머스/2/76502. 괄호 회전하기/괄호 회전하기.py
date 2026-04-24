@@ -1,37 +1,26 @@
-from collections import deque
-
-def is_right(q):
+def is_right(rotated):
     stk = []
+    pairs = {")":"(", "}":"{", "]":"["}
     
-    for each in q:
-        if each == "]":
-            if stk and stk[-1] == "[":
-                stk.pop()
-            else:
-                return False
-        elif each == "}":
-            if stk and stk[-1] == "{":
-                stk.pop()
-            else:
-                return False
-        elif each == ")":
-            if stk and stk[-1] == "(":
-                stk.pop()
-            else:
+    for char in rotated:
+        if char in pairs:
+            if not stk or stk.pop() != pairs[char]:
                 return False
         else:
-            stk.append(each)
-        #print(stk)
-    return False if stk else True
+            stk.append(char)
+
+    return not stk
+                
 
 def solution(s):
-    q = deque(s)
+    if len(s) % 2 != 0:
+        return 0
+    
     cnt = 0
-
-    for _ in range(len(s)):
-        q.append(q.popleft())
-        if is_right(q):
+    for i in range(len(s)):
+        rotated = s[i:] + s[:i]
+        #print(rotated, is_right(rotated))
+        if is_right(rotated):
             cnt += 1
-        #print(q, is_right(q))
     return cnt
         
