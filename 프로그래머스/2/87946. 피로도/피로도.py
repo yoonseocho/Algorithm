@@ -1,15 +1,18 @@
 from itertools import permutations
 
 def solution(k, dungeons):
-    p_list = list(permutations(dungeons, len(dungeons)))
-    cnt = [0] * len(p_list)
+    cases = permutations(dungeons, len(dungeons))
+    max_cnt = 0
+    for case in cases:
+        cnt = 0
+        curr_energy = k
+        for min_need, cost in case:
+            if curr_energy >= min_need:
+                curr_energy -= cost
+                cnt += 1
+        max_cnt = max(max_cnt, cnt)
+        if cnt == len(dungeons):
+            return cnt
     
-    for i in range(len(p_list)):
-        tmp_k = k
-        for min_p, exhausted in p_list[i]:
-            if tmp_k < min_p:
-                continue
-            tmp_k -= exhausted
-            cnt[i] += 1
+    return max_cnt
     
-    return max(cnt)
