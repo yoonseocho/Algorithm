@@ -1,12 +1,10 @@
 def solution(sizes):
-    new_sizes = []
-    for size in sizes:
-        new_sizes.append(sorted(size))
-        
-    ws = []
-    hs = []
-    for w, h in new_sizes:
-        ws.append(w)
-        hs.append(h)
+    max_w, max_h = 0, 0
     
-    return max(ws) * max(hs)
+    for w, h in sizes:
+        big, small = max(w, h), min(w, h)
+        
+        max_w = max(max_w, big)
+        max_h = max(max_h, small)
+    
+    return max_w * max_h
