@@ -3,20 +3,17 @@ def solution(answers):
     second = [2, 1, 2, 3, 2, 4, 2, 5]
     third = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
     
-    one_cnt, two_cnt, three_cnt = 0, 0, 0
-    for i in range(len(answers)):
-        if answers[i] == first[i%len(first)]:
-            one_cnt += 1
-        if answers[i] == second[i%len(second)]:
-            two_cnt += 1
-        if answers[i] == third[i%len(third)]:
-            three_cnt += 1
+    score = [0, 0, 0]
+    for i, answer in enumerate(answers):
+        if answer == first[i%len(first)]:
+            score[0] += 1
+        if answer == second[i%len(second)]:
+            score[1] += 1
+        if answer == third[i%len(third)]:
+            score[2] += 1
     
     answer = []
-    if one_cnt == max(one_cnt, two_cnt, three_cnt):
-        answer.append(1)
-    if two_cnt == max(one_cnt, two_cnt, three_cnt):
-        answer.append(2)
-    if three_cnt == max(one_cnt, two_cnt, three_cnt):
-        answer.append(3)
+    for idx, s in enumerate(score):
+        if s == max(score):
+            answer.append(idx+1)
     return answer
