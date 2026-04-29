@@ -1,11 +1,17 @@
 def solution(prices):
-    answer = [0] * len(prices)
+    n = len(prices)
+    answer = [0] * n
+    stk = []
     
-    for i in range(len(prices)):
-        for j in range(i+1, len(prices)):
-            if prices[j] >= prices[i]:
-                answer[i] += 1
-            else:
-                answer[i] += 1
-                break
+    for curr_idx, price in enumerate(prices):
+        while stk and prices[stk[-1]] > price:
+            prev_idx = stk.pop()
+            answer[prev_idx] = curr_idx - prev_idx
+        stk.append(curr_idx)
+    
+    while stk:
+        prev_idx = stk.pop()
+        answer[prev_idx] = (n-1) - prev_idx
+    
     return answer
+        
