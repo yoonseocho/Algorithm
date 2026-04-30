@@ -3,17 +3,19 @@ from collections import deque
 def solution(priorities, location):
     q = deque()
     
-    for idx, p in enumerate(priorities):
-        q.append((idx, p))
+    for idx, priority in enumerate(priorities):
+        q.append((idx, priority))
     
-    priorities.sort(reverse=True)
-    
-    answer = 0
+    cnt = 0
     while q:
-        each = q.popleft()
-        if each[1] < priorities[answer]:
-            q.append(each)
-        else:
-            answer += 1
-            if location == each[0]:
-                return answer
+        #print(f"{q[0][1]}, {max(q, key=lambda x: x[1])[1]}")
+        if q[0][1] == max(q, key=lambda x: x[1])[1]:
+            cnt += 1
+            if q[0][0] == location:
+                break
+            q.popleft()
+            continue
+        q.append(q.popleft())
+        #print(q)
+    return cnt
+        
