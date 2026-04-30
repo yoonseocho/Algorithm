@@ -1,31 +1,23 @@
 def solution(tickets):
+    tickets.sort(key=lambda x: (x[0], x[1]))
     n = len(tickets)
     visited = [False] * n
-    results = []
     path = ["ICN"]
-    indent = "  "
-    def dfs(path, cnt, next_start):
-        nonlocal results
-        #print(indent*cnt + f"ENTER: path={path}, cnt={cnt}, next_start={next_start}")
-        if cnt == n:
-            results.append(path[:])
-            #print(indent*cnt + f"END: path={path}, cnt={cnt}, results={results}")
-            return
+    def dfs(curr_city, path):
+        if len(path) == n+1:
+            return True
         
         for idx, (start, dest) in enumerate(tickets):
-            if not visited[idx] and next_start == start:
+            if not visited[idx] and curr_city == start:
                 visited[idx] = True
                 path.append(dest)
-                #print(indent*cnt + f"BEFORE DFS: path={path}, cnt={cnt}, visited={visited}")
-                dfs(path, cnt+1, dest)
+                
+                if dfs(dest, path):
+                    return True
                 
                 path.pop()
                 visited[idx] = False
-                #print(indent*cnt + f"AFTER DFS: path={path}, cnt={cnt}, visited={visited}")
     
-    dfs(path, 0, "ICN")
-    
-    results.sort()
-    #print(results)
-    return results[0]
+    if dfs("ICN", path):
+        return path
             
