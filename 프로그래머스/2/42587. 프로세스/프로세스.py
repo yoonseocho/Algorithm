@@ -5,17 +5,16 @@ def solution(priorities, location):
     
     for idx, priority in enumerate(priorities):
         q.append((idx, priority))
+        
+    priorities.sort(reverse=True)
     
     cnt = 0
     while q:
-        #print(f"{q[0][1]}, {max(q, key=lambda x: x[1])[1]}")
-        if q[0][1] == max(q, key=lambda x: x[1])[1]:
+        idx, priority = q.popleft()
+        if priority == priorities[cnt]:
             cnt += 1
-            if q[0][0] == location:
-                break
-            q.popleft()
-            continue
-        q.append(q.popleft())
-        #print(q)
-    return cnt
+            if idx == location:
+                return cnt
+        else:
+            q.append((idx, priority))
         
