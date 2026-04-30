@@ -1,13 +1,18 @@
 def solution(numbers, target):
     n = len(numbers)
     answer = 0
-    def dfs(idx, curr_sum):
+    indent = "  "
+    def dfs(curr_sum, cnt):
         nonlocal answer
-        if idx == n:
+        #print(indent*cnt + f"ENTER: curr_sum={curr_sum}, cnt={cnt}")
+        if cnt == n:
             if curr_sum == target:
                 answer += 1
+            #print(indent*cnt + f"END: curr_sum={curr_sum}, cnt={cnt}, answer = {answer}")
             return
-        dfs(idx+1, curr_sum+numbers[idx])
-        dfs(idx+1, curr_sum-numbers[idx])
+        
+        dfs(curr_sum - numbers[cnt], cnt + 1)
+        dfs(curr_sum + numbers[cnt], cnt + 1)
     dfs(0, 0)
+    
     return answer
