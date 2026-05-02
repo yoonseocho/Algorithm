@@ -6,7 +6,6 @@ def solution(s):
             return False
         if stk and p == ")":
             stk.pop()
-            continue
-        stk.append("(")
-    
+        else:
+            stk.append("(")
     return True if not stk else False
