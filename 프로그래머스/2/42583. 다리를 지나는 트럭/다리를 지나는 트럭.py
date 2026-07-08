@@ -1,17 +1,25 @@
 from collections import deque
 
 def solution(bridge_length, weight, truck_weights):
-    q = deque([0] * bridge_length)
-    truck_weights = deque(truck_weights)
+    bridge = deque([0]) * bridge_length
+    q = deque(truck_weights)
+    
     time = 0
+    current_sum = 0
     
-    while truck_weights:
-        q.pop()
-        time += 1
-        if sum(q) + truck_weights[0] <= weight:
-            q.appendleft(truck_weights.popleft())
+    while q or current_sum > 0:
+        # 차 내보내기
+        car_out = bridge.popleft()
+        current_sum -= car_out
+        
+        # 차 들이기
+        if q and current_sum + q[0] <= weight:
+            car_in = q.popleft()
+            bridge.append(car_in)
+            current_sum += car_in
         else:
-            q.appendleft(0)
-        # print(q)
+            bridge.append(0)
+        
+        time += 1
     
-    return time + bridge_length
+    return time
