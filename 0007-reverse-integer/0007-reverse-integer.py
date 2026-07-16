@@ -1,20 +1,21 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        sign = 1
-        
-        if x < 0:
-            sign = -1
-            
-        rev, x = 0, abs(x)
-
-        while x:
-            x, mod = divmod(x, 10)
-            rev = rev * 10 + mod
-        
-        output = sign * rev
-        
-        if output > 2**31 or output < - 2**31:
+        if x == 0:
             return 0
+
+        num_list = []
+        abs_x = abs(x)
+
+        while abs_x:
+            res = abs_x % 10
+            abs_x //= 10
+            num_list.append(res)
+
+        num = int("".join(map(str, num_list)))
+
+        if x < 0:
+            num = -num
+        if -2**31 <= num <= 2**31 - 1:
+            return num
         else:
-            return output
-        
+            return 0
