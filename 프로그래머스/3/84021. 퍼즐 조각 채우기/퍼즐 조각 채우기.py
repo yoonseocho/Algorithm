@@ -1,88 +1,90 @@
 from collections import deque
 
 def solution(game_board, table):
-    n = len(game_board)
-    
-    dxs = [-1, 1, 0, 0]
-    dys = [0, 0, -1, 1]
-    
-    q = deque()
-    
-    def in_range(x, y):
-        return 0<=x<n and 0<=y<n
-    
-    def normalize(block):
-        min_x = min(x for x, y in block)
-        min_y = min(y for x, y in block)
+    def extract_blocks(board, target):
+        n = len(board)
+        visited = [[False] * n for _ in range(n)]
+        blocks = []
         
-        normalized_block = []
-        for x, y in block:
-            normalized_block.append((x-min_x, y-min_y))
-            
-        return sorted(normalized_block)
-    
-    def rotate(block):
-        return [(y, -x) for x, y in block]
-    
-    def bfs(x, y, target_val, matrix, visited):
-        block = []
-        q.append((x, y))
-        visited[x][y] = True
+        dxs = [-1, 1, 0, 0]
+        dys = [0, 0, -1, 1]
         
-        while q:
-            x, y = q.popleft()
-            block.append((x, y))
-
-            for dx, dy in zip(dxs, dys):
-                nx, ny = x + dx, y + dy
-                if in_range(nx, ny) and not visited[nx][ny] and matrix[nx][ny] == target_val:
-                    visited[nx][ny] = True
-                    q.append((nx, ny))
+        def in_range(x, y):
+            return 0<=x<n and 0<=y<n
+        
+        for i in range(n):
+            for j in range(n):
+                if board[i][j] == target and not visited[i][j]:
+                    # bfs 시작
+                    q = deque([(i, j)])
+                    visited[i][j] = True
                     
-        return normalize(block)
-                
-                
+                    block_coords = [(i, j)]
+                    
+                    while q:
+                        x, y = q.popleft()
+                        
+                        for dx, dy in zip(dxs, dys):
+                            nx, ny = x + dx, y + dy
+                            
+                            if in_range(nx, ny) and not visited[nx][ny] and board[nx][ny] == target:
+                                q.append((nx, ny))
+                                visited[nx][ny] = True
+                                block_coords.append((nx, ny))
+                    
+                    blocks.append(block_coords)
+        return blocks
+        
     
-    # game_board에서 0인 부분 추출
-    visited_board = [[False] * n for _ in range(n)]
-    board_pieces = []
-    for i in range(n):
-        for j in range(n):
-            if game_board[i][j] == 0 and not visited_board[i][j]:
-                piece = bfs(i, j, 0, game_board, visited_board)
-                board_pieces.append(piece)
-                
-    # table에서 1인 부분 추출
-    visited_table = [[False] * n for _ in range(n)]
-    table_pieces = []
-    for i in range(n):
-        for j in range(n):
-            if table[i][j] == 1 and not visited_table[i][j]:
-                piece = bfs(i, j, 1, table, visited_table)
-                table_pieces.append(piece)
+    def align_origin(block):
+        min_x = min(b[0] for b in block)
+        min_y = min(b[1] for b in block)
+
+        normalized_block = [(x-min_x, y-min_y) for x, y in block]
+
+        return sorted(normalized_block)
+        
     
-    # game_board와 table 조각 비교
-    table_used = [False] * len(table_pieces)
+    def rotate_block(block):
+        rotated_block = [(y, -x) for x, y in block]
+        return align_origin(rotated_block)
+    
+    # 들어맞는지 비교
+    blank_pieces = [align_origin(blank_piece) for blank_piece in extract_blocks(game_board, 0)]
+    puzzle_pieces = [align_origin(puzzle_piece) for puzzle_piece in extract_blocks(table, 1)]
+    
+    used_puzzle = [False] * len(puzzle_pieces)
     answer = 0
     
-    for board_p in board_pieces:
-        found = False
-        for i in range(len(table_pieces)):
-            if table_used[i] or found:
+    for blank in blank_pieces:
+        for i, puzzle in enumerate(puzzle_pieces):
+            if used_puzzle[i]:
                 continue
             
-            target_p = table_pieces[i]
+            if len(blank) != len(puzzle):
+                continue
+            
+            match_found = False
+            rotated = puzzle
+            
             for _ in range(4):
-                if board_p == target_p:
-                    answer += len(board_p)
-                    table_used[i] = True
-                    found = True
+                if blank == rotated:
+                    match_found = True
                     break
-                
-                target_p = rotate(target_p)
-                target_p = normalize(target_p)
-            if found:
+                rotated = rotate_block(rotated)
+            
+            if match_found:
+                used_puzzle[i] = True
+                answer += len(blank)
                 break
     return answer
-                
         
+    
+                    
+    
+    
+    
+    
+    
+    
+    
