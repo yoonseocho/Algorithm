@@ -1,10 +1,20 @@
 def solution(citations):
-    citations.sort(reverse = True)
+    n = len(citations)
     h_index = 0
+    h_indexs = []
     
-    for i, citation in enumerate(citations, start=1):
-        if citation >= i:
-            h_index = i
-        else:
-            break
-    return h_index
+    while h_index <= n:
+        cnt1 = 0
+        
+        for citation in citations:
+            if citation >= h_index:
+                cnt1 += 1
+        
+        if cnt1 >= h_index:
+            h_indexs.append(h_index)
+        
+        h_index += 1
+    
+    return max(h_indexs) if h_indexs else 0
+            
+    
