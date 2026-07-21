@@ -13,6 +13,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0001-two-sum](https://github.com/yoonseocho/Algorithm/tree/main/0001-two-sum/) | Easy |
 | [0014-longest-common-prefix](https://github.com/yoonseocho/Algorithm/tree/main/0014-longest-common-prefix/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -36,6 +37,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -48,4 +50,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 <!---LeetCode Topics End-->
