@@ -1,12 +1,11 @@
-from itertools import permutations
-
 class Solution:
-    memo = {}
     def climbStairs(self, n: int) -> int:
-        if n == 1:
-            return 1
-        if n == 2:
-            return 2
-        if n not in self.memo:
-            self.memo[n] = self.climbStairs(n-1) + self.climbStairs(n-2)
-        return self.memo[n]
+        memo = {1:1, 2:2}
+
+        if n == 1 or n == 2:
+            return memo[n]
+
+        for i in range(3, n+1):
+            memo[i] = memo[i-2] + memo[i-1]
+        
+        return memo[n]
