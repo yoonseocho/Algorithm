@@ -1,35 +1,19 @@
-from collections import deque
-
 def solution(m, n, puddles):
-    q = deque([(0, 0)])
-    visited = [[0] * m for _ in range(n)] # 최단거리
-    count = [[0] * m for _ in range(n)]
-    visited[0][0] = 1
-    count[0][0] = 1
-    
-    dxs = [1, 0]
-    dys = [0, 1]
-    
-    road = [[1] * m for _ in range(n)]
+    dp = [[0]*(m+1) for _ in range(n+1)]
     
     for y, x in puddles:
-        road[x-1][y-1] = 0
+        dp[x][y] = -1
     
-    def in_range(x, y):
-        return 0<=x<n and 0<=y<m
+    dp[1][1] = 1
     
-    while q:
-        x, y = q.popleft()
-        
-        for dx, dy in zip(dxs, dys):
-            nx, ny = x + dx, y + dy
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            if (i==1 and j==1) or dp[i][j] == -1:
+                continue
             
-            if in_range(nx, ny) and road[nx][ny]:
-                if not visited[nx][ny]:
-                    q.append((nx, ny))
-                    visited[nx][ny] = visited[x][y] + 1
-                    count[nx][ny] = count[x][y]
-                elif visited[nx][ny] == visited[x][y] + 1:
-                    count[nx][ny] += count[x][y]
+            from_top = dp[i-1][j] if dp[i-1][j] != -1 else 0
+            from_left = dp[i][j-1] if dp[i][j-1] != -1 else 0
+            
+            dp[i][j] = (from_top + from_left) % 1000000007
     
-    return count[n-1][m-1] % 1000000007
+    return dp[n][m]
