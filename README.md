@@ -26,6 +26,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0007-reverse-integer](https://github.com/yoonseocho/Algorithm/tree/main/0007-reverse-integer/) | Medium |
+| [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/yoonseocho/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 ## String
 | Problem Name | Difficulty |
@@ -39,6 +40,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/yoonseocho/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
@@ -68,4 +70,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
