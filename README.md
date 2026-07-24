@@ -38,6 +38,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0008-string-to-integer-atoi](https://github.com/yoonseocho/Algorithm/tree/main/0008-string-to-integer-atoi/) | Medium |
 | [0014-longest-common-prefix](https://github.com/yoonseocho/Algorithm/tree/main/0014-longest-common-prefix/) | Easy |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -55,6 +56,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0300-longest-increasing-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
 | [0377-combination-sum-iv](https://github.com/yoonseocho/Algorithm/tree/main/0377-combination-sum-iv/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
