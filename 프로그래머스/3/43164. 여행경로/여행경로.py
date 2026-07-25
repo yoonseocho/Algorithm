@@ -1,25 +1,21 @@
 def solution(tickets):
-    answers = []
-    route = ["ICN"]
-    n = len(tickets)
-    visited = [False] * n
-    indent = "  "
+    tickets.sort(key=lambda x: x[1])
+    path = ["ICN"]
+    n = len(tickets)+1
+    visited = [False] * len(tickets)
     
-    def dfs(start, cnt):
-        #print(f"{indent*cnt}>>>dfs({start}, {cnt}) 시작, {route}")
-        if cnt == n:
-            answers.append(route[:])
-            return
+    def dfs(start, path):
+        if len(path) == n:
+            return True
         
-        for i in range(n):
-            if not visited[i] and tickets[i][0] == start:
-                route.append(tickets[i][1])
+        for i, (s, e) in enumerate(tickets):
+            if not visited[i] and s == start:
                 visited[i] = True
-                dfs(tickets[i][1], cnt+1)
-                #print(f"{indent*cnt}>>>dfs({tickets[i][1]}, {cnt+1}) 종료, {route}")
-                route.pop()
+                path.append(e)
+                if dfs(e, path):
+                    return True
+                path.pop()
                 visited[i] = False
-                
     
-    dfs("ICN", 0)
-    return sorted(answers)[0]
+    dfs("ICN", path)
+    return path
