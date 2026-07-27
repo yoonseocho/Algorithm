@@ -19,7 +19,7 @@ class Solution:
         for i in range(3, n):
             dp1[i] = max(dp1[i-1], dp1[i-2] + nums[i-1])
 
-        dp1[n] = dp1[n-2]
+        dp1[n] = dp1[n-1]
 
         # case2. 끝집만 터는 경우
         dp2[1] = 0
@@ -36,6 +36,6 @@ class Solution:
         for i in range(3, n):
             dp3[i] = max(dp3[i-1], dp3[i-2] + nums[i-1])
 
-        dp3[n] = dp3[n-2]
+        dp3[n] = dp3[n-1]
 
         return max(*dp1, *dp2, *dp3)
