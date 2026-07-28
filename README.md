@@ -38,6 +38,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0008-string-to-integer-atoi](https://github.com/yoonseocho/Algorithm/tree/main/0008-string-to-integer-atoi/) | Medium |
 | [0014-longest-common-prefix](https://github.com/yoonseocho/Algorithm/tree/main/0014-longest-common-prefix/) | Easy |
+| [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 ## Trie
@@ -50,6 +51,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/yoonseocho/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
+| [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
