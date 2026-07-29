@@ -1,6 +1,6 @@
 class Solution:
     def combinationSum4(self, nums: List[int], target: int) -> int:
-        dp = [0] * (target+1)
+        dp = [0] * (target + 1)
         dp[0] = 1
         nums.sort()
 
@@ -10,4 +10,5 @@ class Solution:
                 if diff < 0:
                     break
                 dp[i] += dp[diff]
-        return dp[-1]
+        
+        return dp[target]
