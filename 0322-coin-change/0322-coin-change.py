@@ -12,8 +12,8 @@ class Solution:
                 min_coin = min(min_coin, dp[diff] + 1)
             dp[i] = min_coin
         
-        if dp[amount] < float('inf'):
-            return dp[amount]
-        else:
+        if dp[amount] == float('inf'):
             return -1
+        else:
+            return dp[amount]
                 
