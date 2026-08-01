@@ -1,26 +1,26 @@
 from collections import deque
 
 def solution(n, computers):
-    visited = [False] * n
-    answer = 0
+    visited = [False]*n
+    q = deque()
     
-    def bfs(start):
-        q = deque([start])
-        visited[start] = True
+    def bfs(x):
+        visited[x] = True
+        q.append(x)
         
         while q:
-            current = q.popleft()
+            x = q.popleft()
             
-            for i in range(n):
-                if i != current and not visited[i] and computers[current][i]:
-                    q.append(i)
-                    visited[i] = True
+            # 인접행렬 순회
+            for k in range(n):
+                if x != k and computers[x][k] and not visited[k]:
+                    visited[k] = True
+                    q.append(k)
     
+    cnt = 0
     for i in range(n):
         if not visited[i]:
             bfs(i)
-            answer += 1
-    return answer
-        
+            cnt += 1
     
-    
+    return cnt
