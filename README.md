@@ -12,6 +12,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0001-two-sum](https://github.com/yoonseocho/Algorithm/tree/main/0001-two-sum/) | Easy |
 | [0014-longest-common-prefix](https://github.com/yoonseocho/Algorithm/tree/main/0014-longest-common-prefix/) | Easy |
+| [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
@@ -53,6 +54,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
 | [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/yoonseocho/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
@@ -102,4 +104,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/yoonseocho/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 <!---LeetCode Topics End-->
