@@ -1,11 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        num_dict = {}
+        memo = {}
 
         for i, num in enumerate(nums):
             complement = target - num
-
-            if complement in num_dict:
-                return [i, num_dict[complement]]
-            
-            num_dict[num] = i
+            if complement in memo:
+                return [memo[complement], i]
+            memo[num] = i
