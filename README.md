@@ -18,6 +18,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0152-maximum-product-subarray/) | Medium |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0198-house-robber](https://github.com/yoonseocho/Algorithm/tree/main/0198-house-robber/) | Medium |
 | [0213-house-robber-ii](https://github.com/yoonseocho/Algorithm/tree/main/0213-house-robber-ii/) | Medium |
 | [0217-contains-duplicate](https://github.com/yoonseocho/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
@@ -77,6 +78,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
 ## Sorting
