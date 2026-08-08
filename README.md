@@ -16,6 +16,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0033-search-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
+| [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
@@ -34,6 +35,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/yoonseocho/Algorithm/tree/main/0001-two-sum/) | Easy |
+| [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [0217-contains-duplicate](https://github.com/yoonseocho/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
@@ -129,4 +131,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 <!---LeetCode Topics End-->
