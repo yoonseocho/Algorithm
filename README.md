@@ -15,6 +15,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0015-3sum](https://github.com/yoonseocho/Algorithm/tree/main/0015-3sum/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
+| [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -134,5 +135,10 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 <!---LeetCode Topics End-->
