@@ -1,9 +1,10 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        sorted_nums = sorted(enumerate(nums), key=lambda x: x[1])
         memo = {}
 
-        for i, num in enumerate(nums):
+        for idx, num in sorted_nums:
             complement = target - num
             if complement in memo:
-                return [memo[complement], i]
-            memo[num] = i
+                return [memo[complement], idx]
+            memo[num] = idx
