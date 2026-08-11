@@ -1,7 +1,7 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         n = len(nums)
-        answer = set()
+        closest_sum = float('inf')
         nums.sort()
 
         for i in range(n):
@@ -11,7 +11,9 @@ class Solution:
             lo, hi = i+1, n-1
             while lo < hi:
                 s = nums[i] + nums[lo] + nums[hi]
-                answer.add(s)
+                
+                if abs(s - target) < abs(closest_sum - target):
+                    closest_sum = s
 
                 if s == target:
                     return s
@@ -24,4 +26,4 @@ class Solution:
                     while lo < hi and nums[lo] == nums[lo-1]:
                         lo += 1
    
-        return min(answer, key=lambda x: abs(x-target))
+        return closest_sum
