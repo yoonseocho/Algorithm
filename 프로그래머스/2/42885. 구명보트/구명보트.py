@@ -1,17 +1,16 @@
 def solution(people, limit):
+    people.sort()
+    
     n = len(people)
-    people.sort(reverse=True)
+    l, r = 0, n-1
     cnt = 0
     
-    l, r = 0, n-1
-    
-    while l<=r:
-        if people[l] + people[r] > limit:
-            l += 1
+    while l <= r:
+        summ = people[l] + people[r]
+        if summ > limit:
+            r -= 1
         else:
             l += 1
             r -= 1
         cnt += 1
     return cnt
-    
-    
