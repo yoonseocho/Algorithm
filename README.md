@@ -36,6 +36,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0377-combination-sum-iv](https://github.com/yoonseocho/Algorithm/tree/main/0377-combination-sum-iv/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
+| [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -115,6 +116,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/yoonseocho/Algorithm/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
+| [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
