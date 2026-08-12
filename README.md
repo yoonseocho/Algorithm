@@ -34,6 +34,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0377-combination-sum-iv](https://github.com/yoonseocho/Algorithm/tree/main/0377-combination-sum-iv/) | Medium |
+| [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
 | [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
@@ -84,6 +85,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0300-longest-increasing-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
 | [0377-combination-sum-iv](https://github.com/yoonseocho/Algorithm/tree/main/0377-combination-sum-iv/) | Medium |
+| [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 ## Two Pointers
@@ -142,6 +144,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
+| [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
 ## Complete Knapsack
 | Problem Name | Difficulty |
@@ -174,4 +177,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
+## 0-1 Knapsack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 <!---LeetCode Topics End-->
