@@ -4,19 +4,16 @@ class Solution:
         l, r = 0, n-1
 
         while l <= r:
-            mid = (l + r) // 2
-
+            mid = (l+r+1) // 2
+            
             if nums[mid] == target:
                 return mid
             
-            # 왼쪽 절반 정렬됨
             if nums[l] <= nums[mid]:
                 if nums[l] <= target < nums[mid]:
                     r = mid - 1
                 else:
                     l = mid + 1
-
-            # 오른쪽 절반 정렬됨
             else:
                 if nums[mid] < target <= nums[r]:
                     l = mid + 1
