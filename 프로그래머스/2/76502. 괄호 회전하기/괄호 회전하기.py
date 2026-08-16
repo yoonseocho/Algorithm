@@ -1,26 +1,41 @@
-def is_right(rotated):
-    stk = []
-    pairs = {")":"(", "}":"{", "]":"["}
-    
-    for char in rotated:
-        if char in pairs:
-            if not stk or stk.pop() != pairs[char]:
-                return False
-        else:
-            stk.append(char)
-
-    return not stk
-                
-
 def solution(s):
-    if len(s) % 2 != 0:
-        return 0
+    
+    def is_valid(s):
+        stk = []
+        
+        for chr in s:
+            if not stk and (chr == "]" or chr == ")" or chr == "}"):
+                return False
+            
+            if chr == "]":
+                if stk and stk[-1] == "[":
+                    stk.pop()
+                    continue
+                else:
+                    return False
+            
+            elif chr == ")":
+                if stk and stk[-1] == "(":
+                    stk.pop()
+                    continue
+                else:
+                    return False
+            
+            elif chr == "}":
+                if stk and stk[-1] == "{":
+                    stk.pop()
+                    continue
+                else:
+                    return False
+            
+            stk.append(chr)
+        
+        return False if stk else True
     
     cnt = 0
-    for i in range(len(s)):
-        rotated = s[i:] + s[:i]
-        #print(rotated, is_right(rotated))
-        if is_right(rotated):
+    for x in range(len(s)):
+        rotated_s = s[x:] + s[:x]
+        if is_valid(rotated_s):
             cnt += 1
     return cnt
-        
+            
