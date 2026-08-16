@@ -17,6 +17,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0016-3sum-closest](https://github.com/yoonseocho/Algorithm/tree/main/0016-3sum-closest/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
+| [0048-rotate-image](https://github.com/yoonseocho/Algorithm/tree/main/0048-rotate-image/) | Medium |
 | [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
@@ -53,6 +54,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0007-reverse-integer](https://github.com/yoonseocho/Algorithm/tree/main/0007-reverse-integer/) | Medium |
+| [0048-rotate-image](https://github.com/yoonseocho/Algorithm/tree/main/0048-rotate-image/) | Medium |
 | [0062-unique-paths](https://github.com/yoonseocho/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/yoonseocho/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 | [0189-rotate-array](https://github.com/yoonseocho/Algorithm/tree/main/0189-rotate-array/) | Medium |
@@ -159,6 +161,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/yoonseocho/Algorithm/tree/main/0048-rotate-image/) | Medium |
 | [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
