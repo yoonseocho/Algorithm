@@ -2,35 +2,18 @@ def solution(s):
     
     def is_valid(s):
         stk = []
+        pairs = {")":"(", "}":"{", "]":"["}
         
         for chr in s:
-            if not stk and (chr == "]" or chr == ")" or chr == "}"):
-                return False
-            
-            if chr == "]":
-                if stk and stk[-1] == "[":
-                    stk.pop()
-                    continue
-                else:
+            if chr in pairs:
+                if not stk or stk[-1] != pairs[chr]:
                     return False
+                stk.pop()
             
-            elif chr == ")":
-                if stk and stk[-1] == "(":
-                    stk.pop()
-                    continue
-                else:
-                    return False
-            
-            elif chr == "}":
-                if stk and stk[-1] == "{":
-                    stk.pop()
-                    continue
-                else:
-                    return False
-            
-            stk.append(chr)
+            else:
+                stk.append(chr)
         
-        return False if stk else True
+        return not stk
     
     cnt = 0
     for x in range(len(s)):
