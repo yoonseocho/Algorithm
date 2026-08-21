@@ -1,11 +1,17 @@
 def solution(brown, yellow):
-    total = brown + yellow
-    candidates = []
-    for h in range(3, brown//2):
-        for w in range(3, brown//2):
-            if (h-2)*(w-2) == yellow:
-                candidates.append((h, w))
+    def find_candidates(yellow):
+        candidate = []
+        for i in range(1, int(yellow**0.5)+1):
+            if yellow % i != 0:
+                continue
+            j = yellow // i
+            if i <= j:
+                candidate.append((j+2, i+2))
+        return candidate
     
-    for h, w in candidates:
-        if h*w - (h-2)*(w-2) == brown:
-            return [w, h]
+    possible_cases = find_candidates(yellow)
+    print(possible_cases)
+    for i, j in possible_cases:
+        if i * j - yellow == brown:
+            return [i, j]
+                
