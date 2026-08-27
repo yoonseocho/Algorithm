@@ -1,17 +1,16 @@
 def solution(numbers, target):
     answer = 0
-    n = len(numbers)
-    
-    def dfs(curr_sum, cnt):
+    indent = "   "
+    def dfs(curr_sum, depth):
         nonlocal answer
-        if cnt == n:
+        if depth == len(numbers):
             if curr_sum == target:
                 answer += 1
             return
         
-        dfs(curr_sum + numbers[cnt], cnt + 1)
-        dfs(curr_sum - numbers[cnt], cnt + 1)
-
+        dfs(curr_sum + numbers[depth], depth+1)
+        dfs(curr_sum - numbers[depth], depth+1)
+    
     dfs(0, 0)
     
     return answer
