@@ -68,6 +68,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
+| [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -190,4 +191,12 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
 <!---LeetCode Topics End-->
