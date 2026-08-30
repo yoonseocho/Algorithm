@@ -30,6 +30,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/yoonseocho/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0189-rotate-array](https://github.com/yoonseocho/Algorithm/tree/main/0189-rotate-array/) | Medium |
 | [0198-house-robber](https://github.com/yoonseocho/Algorithm/tree/main/0198-house-robber/) | Medium |
+| [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 | [0213-house-robber-ii](https://github.com/yoonseocho/Algorithm/tree/main/0213-house-robber-ii/) | Medium |
 | [0217-contains-duplicate](https://github.com/yoonseocho/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/yoonseocho/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -138,6 +139,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
 ## Combinatorics
 | Problem Name | Difficulty |
@@ -169,6 +171,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
+| [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -181,6 +184,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
+| [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -201,4 +205,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 <!---LeetCode Topics End-->
