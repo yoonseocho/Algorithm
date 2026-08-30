@@ -69,6 +69,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+| [0482-license-key-formatting](https://github.com/yoonseocho/Algorithm/tree/main/0482-license-key-formatting/) | Easy |
 | [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1694-reformat-phone-number](https://github.com/yoonseocho/Algorithm/tree/main/1694-reformat-phone-number/) | Easy |
 ## Trie
