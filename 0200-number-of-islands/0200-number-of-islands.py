@@ -1,34 +1,33 @@
 from collections import deque
 
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:       
-        number_of_islands = 0
-        row = len(grid)
-        col = len(grid[0])
-        visited = [[False]*col for _ in range(row)]
+    def numIslands(self, grid: List[List[str]]) -> int:
+        m, n = len(grid), len(grid[0])
 
-        def bfs(x, y):
-            dx = [0, 0, -1, 1]
-            dy = [1, -1, 0, 0]
+        drs, dcs = [-1, 1, 0, 0], [0, 0, -1, 1]
+        visited = [[False] * n for _ in range(m)]
 
-            visited[x][y] = True
-            q = deque()
-            q.append((x, y))
+        def in_range(r, c):
+            return 0<=r<m and 0<=c<n
+
+        def bfs(r, c):
+            q = deque([(r, c)])
+            visited[r][c] = True
 
             while q:
-                cur_x, cur_y = q.popleft()
-                for i in range(4): # 상하좌우 순회하기
-                    next_x = cur_x + dx[i]
-                    next_y = cur_y + dy[i]
-                    if  0 <= next_x < row and 0 <= next_y < col:
-                        if grid[next_x][next_y] == "1" and not visited[next_x][next_y]:
-                            visited[next_x][next_y] = True
-                            q.append((next_x, next_y))
+                r, c = q.popleft()
+
+                for dr, dc in zip(drs, dcs):
+                    nr, nc = r+dr, c+dc
+                    if in_range(nr, nc) and grid[nr][nc] == "1" and not visited[nr][nc]:
+                        q.append((nr, nc))
+                        visited[nr][nc] = True
         
-        for i in range(row):
-            for j in range(col):
+        cnt = 0
+        for i in range(m):
+            for j in range(n):
                 if grid[i][j] == "1" and not visited[i][j]:
                     bfs(i, j)
-                    number_of_islands += 1
-        return number_of_islands
+                    cnt += 1
         
+        return cnt
