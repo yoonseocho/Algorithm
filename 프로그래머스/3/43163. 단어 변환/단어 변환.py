@@ -9,26 +9,23 @@ def solution(begin, target, words):
     
     def is_one_letter_diff(word1, word2):
         diff_cnt = 0
-        for c1, c2 in zip(word1, word2):
-            if c1 != c2:
+        for ch1, ch2 in zip(word1, word2):
+            if ch1 != ch2:
                 diff_cnt += 1
-            if diff_cnt > 1:
-                return False
+        if diff_cnt == 1:
+            return True
+        return False
+    
+    # bfs
+    q = deque([(begin, 0)])
+    
+    while q:
+        curr_word, cnt = q.popleft()
         
-        return diff_cnt == 1
-            
-    def bfs():
-        q = deque([(begin, 0)])
-
-        while q:
-            curr_word, cnt = q.popleft()
-            
-            if curr_word == target:
-                return cnt
-
-            for i, word in enumerate(words):
-                if is_one_letter_diff(curr_word, word) and not visited[i]:
-                    q.append((word, cnt+1))
-                    visited[i] = True
-                
-    return bfs()
+        if curr_word == target:
+            return cnt
+        
+        for i, word in enumerate(words):
+            if not visited[i] and is_one_letter_diff(curr_word, word):
+                q.append((word, cnt+1))
+                visited[i] = True
