@@ -1,8 +1,8 @@
-from collections import Counter
-
 def solution(participant, completion):
-    a = Counter(participant)
-    b = Counter(completion)
+    participant.sort()
+    completion.sort()
     
-    answer = a-b
-    return list(answer.keys())[0]
+    for p, c in zip(participant, completion):
+        if p != c:
+            return p
+    return participant[-1]
