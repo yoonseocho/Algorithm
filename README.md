@@ -22,6 +22,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0053-maximum-subarray](https://github.com/yoonseocho/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0054-spiral-matrix](https://github.com/yoonseocho/Algorithm/tree/main/0054-spiral-matrix/) | Medium |
 | [0055-jump-game](https://github.com/yoonseocho/Algorithm/tree/main/0055-jump-game/) | Medium |
+| [0056-merge-intervals](https://github.com/yoonseocho/Algorithm/tree/main/0056-merge-intervals/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yoonseocho/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -126,6 +127,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0015-3sum](https://github.com/yoonseocho/Algorithm/tree/main/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/yoonseocho/Algorithm/tree/main/0016-3sum-closest/) | Medium |
 | [0049-group-anagrams](https://github.com/yoonseocho/Algorithm/tree/main/0049-group-anagrams/) | Medium |
+| [0056-merge-intervals](https://github.com/yoonseocho/Algorithm/tree/main/0056-merge-intervals/) | Medium |
 | [0217-contains-duplicate](https://github.com/yoonseocho/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
@@ -198,6 +200,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Quicksort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0056-merge-intervals](https://github.com/yoonseocho/Algorithm/tree/main/0056-merge-intervals/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 ## 0-1 Knapsack
 | Problem Name | Difficulty |
