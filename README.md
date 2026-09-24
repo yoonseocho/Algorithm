@@ -73,6 +73,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+| [0443-string-compression](https://github.com/yoonseocho/Algorithm/tree/main/0443-string-compression/) | Medium |
 | [0482-license-key-formatting](https://github.com/yoonseocho/Algorithm/tree/main/0482-license-key-formatting/) | Easy |
 | [1143-longest-common-subsequence](https://github.com/yoonseocho/Algorithm/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1694-reformat-phone-number](https://github.com/yoonseocho/Algorithm/tree/main/1694-reformat-phone-number/) | Easy |
@@ -109,6 +110,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0016-3sum-closest](https://github.com/yoonseocho/Algorithm/tree/main/0016-3sum-closest/) | Medium |
 | [0189-rotate-array](https://github.com/yoonseocho/Algorithm/tree/main/0189-rotate-array/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0443-string-compression](https://github.com/yoonseocho/Algorithm/tree/main/0443-string-compression/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
