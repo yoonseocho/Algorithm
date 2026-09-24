@@ -5,6 +5,7 @@ class Solution:
 
         while r < n:
             ch = chars[r]
+
             start = r
             while r < n and chars[r] == ch:
                 r += 1
@@ -17,9 +18,7 @@ class Solution:
                 for d in str(count):
                     chars[w] = d
                     w += 1
-        
-        return w 
             
-
+        return w
 
 
