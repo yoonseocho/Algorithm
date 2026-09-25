@@ -44,6 +44,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
 | [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
+| [0994-rotting-oranges](https://github.com/yoonseocho/Algorithm/tree/main/0994-rotting-oranges/) | Medium |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/yoonseocho/Algorithm/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -149,6 +150,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/yoonseocho/Algorithm/tree/main/0322-coin-change/) | Medium |
+| [0994-rotting-oranges](https://github.com/yoonseocho/Algorithm/tree/main/0994-rotting-oranges/) | Medium |
 ## Combinatorics
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -180,6 +182,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0073-set-matrix-zeroes](https://github.com/yoonseocho/Algorithm/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0200-number-of-islands](https://github.com/yoonseocho/Algorithm/tree/main/0200-number-of-islands/) | Medium |
+| [0994-rotting-oranges](https://github.com/yoonseocho/Algorithm/tree/main/0994-rotting-oranges/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
