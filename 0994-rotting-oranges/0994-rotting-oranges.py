@@ -18,6 +18,7 @@ class Solution:
                 if grid[i][j] == 2:
                     q.append((i, j))
         
+        # bfs
         while q:
             cur_r, cur_c = q.popleft()
 
@@ -28,14 +29,11 @@ class Solution:
                     visited[nr][nc] = visited[cur_r][cur_c] + 1
                     q.append((nr, nc))
         
-        flag = False
+        # 안썩은 오렌지 있나 확인
         for i in range(m):
             for j in range(n):
                 if not visited[i][j] and grid[i][j] == 1:
-                    flag = True
-                    break
-            if flag:
-                break
+                    return -1
 
-        return -1 if flag else max(map(max, visited))
+        return max(map(max, visited))
 
