@@ -43,6 +43,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
+| [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 | [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
 | [0994-rotting-oranges](https://github.com/yoonseocho/Algorithm/tree/main/0994-rotting-oranges/) | Medium |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/yoonseocho/Algorithm/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
@@ -216,6 +217,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+| [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -228,4 +230,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0127-word-ladder](https://github.com/yoonseocho/Algorithm/tree/main/0127-word-ladder/) | Hard |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 <!---LeetCode Topics End-->
