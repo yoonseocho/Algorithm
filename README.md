@@ -42,6 +42,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0377-combination-sum-iv](https://github.com/yoonseocho/Algorithm/tree/main/0377-combination-sum-iv/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/yoonseocho/Algorithm/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0455-assign-cookies](https://github.com/yoonseocho/Algorithm/tree/main/0455-assign-cookies/) | Easy |
+| [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 | [0518-coin-change-ii](https://github.com/yoonseocho/Algorithm/tree/main/0518-coin-change-ii/) | Medium |
 | [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 | [0860-lemonade-change](https://github.com/yoonseocho/Algorithm/tree/main/0860-lemonade-change/) | Easy |
@@ -58,6 +59,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0139-word-break](https://github.com/yoonseocho/Algorithm/tree/main/0139-word-break/) | Medium |
 | [0217-contains-duplicate](https://github.com/yoonseocho/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/yoonseocho/Algorithm/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -217,6 +219,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
+| [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
@@ -233,5 +236,6 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
 <!---LeetCode Topics End-->
