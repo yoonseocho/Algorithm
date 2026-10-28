@@ -2,22 +2,25 @@ import math
 
 def solution(progresses, speeds):
     days = []
-    for progress, speed in zip(progresses, speeds):
-        day = math.ceil((100-progress) / speed)
+    for p, s in zip(progresses, speeds):
+        day = math.ceil((100 - p) / s)
         days.append(day)
-    # 7 3 9 -> 2 1
-    current = days[0]
-    cnt = 1
+
+    stk = []
     ans = []
-    for i in range(1, len(days)):
-        if current >= days[i]:
+    for day in days:
+        cnt = 0
+        while stk and stk[0] < day:
+            stk.pop()
             cnt += 1
-        else:
+        if cnt != 0:
             ans.append(cnt)
-            current = days[i]
-            cnt = 1
+        stk.append(day)
+    
+    cnt = 0
+    while stk:
+        stk.pop()
+        cnt += 1
     ans.append(cnt)
+    
     return ans
-        
-        
-            
