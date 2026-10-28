@@ -23,13 +23,7 @@ def solution(new_id):
         i += 1
     
     # 4단계
-    new_id_4 = ""
-    
-    for i in range(len(new_id_3)):
-        if i == 0 or i == len(new_id_3)-1:
-            if new_id_3[i] == '.':
-                continue
-        new_id_4 += new_id_3[i]
+    new_id_4 = new_id_3.strip('.')
     
     # 5단계
     new_id_5 = new_id_4
@@ -41,10 +35,7 @@ def solution(new_id):
     new_id_6 = new_id_5
     
     if len(new_id_5) >= 16:
-        new_id_6 = new_id_5[:15]
-    
-    if new_id_6[-1] == ".":
-        new_id_6 = new_id_6[:-1]
+        new_id_6 = new_id_5[:15].rstrip('.')
     
     # 7단계
     new_id_7 = new_id_6
