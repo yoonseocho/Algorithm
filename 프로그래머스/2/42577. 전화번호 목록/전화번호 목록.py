@@ -1,8 +1,10 @@
 def solution(phone_book):
-    phone_book.sort()
+    phone_set = set(phone_book)
     
-    for i in range(len(phone_book)-1):
-        if phone_book[i] == phone_book[i+1][:len(phone_book[i])]:
-            return False
+    for p in phone_book:
+        temp = ""
+        for num in p:
+            temp += num
+            if temp in phone_set and temp != p:
+                return False
     return True
-    
