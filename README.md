@@ -74,6 +74,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | [0003-longest-substring-without-repeating-characters](https://github.com/yoonseocho/Algorithm/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0008-string-to-integer-atoi](https://github.com/yoonseocho/Algorithm/tree/main/0008-string-to-integer-atoi/) | Medium |
 | [0014-longest-common-prefix](https://github.com/yoonseocho/Algorithm/tree/main/0014-longest-common-prefix/) | Easy |
+| [0020-valid-parentheses](https://github.com/yoonseocho/Algorithm/tree/main/0020-valid-parentheses/) | Easy |
 | [0049-group-anagrams](https://github.com/yoonseocho/Algorithm/tree/main/0049-group-anagrams/) | Medium |
 | [0079-word-search](https://github.com/yoonseocho/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0091-decode-ways](https://github.com/yoonseocho/Algorithm/tree/main/0091-decode-ways/) | Medium |
@@ -218,6 +219,7 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0020-valid-parentheses](https://github.com/yoonseocho/Algorithm/tree/main/0020-valid-parentheses/) | Easy |
 | [0394-decode-string](https://github.com/yoonseocho/Algorithm/tree/main/0394-decode-string/) | Medium |
 | [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
@@ -238,4 +240,8 @@ This is an auto push repository for algorithm problems created with [BaekjoonHub
 | ------- | ------- |
 | [0496-next-greater-element-i](https://github.com/yoonseocho/Algorithm/tree/main/0496-next-greater-element-i/) | Easy |
 | [0739-daily-temperatures](https://github.com/yoonseocho/Algorithm/tree/main/0739-daily-temperatures/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0020-valid-parentheses](https://github.com/yoonseocho/Algorithm/tree/main/0020-valid-parentheses/) | Easy |
 <!---LeetCode Topics End-->
