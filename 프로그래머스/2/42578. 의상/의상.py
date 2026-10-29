@@ -1,17 +1,16 @@
+from collections import defaultdict
+
 def solution(clothes):
-    memo = {}
+    clothes_dict = defaultdict(int)
     
-    for _, category in clothes:
-        if category in memo:
-            memo[category] += 1
-        else:
-            memo[category] = 1
+    for name, cloth_type in clothes:
+        clothes_dict[cloth_type] += 1
     
-    answer = 1
-    for val_cnt in memo.values():
-        answer *= val_cnt + 1
-    return answer - 1
-        
+    ans = 1
+    for val_cnt in clothes_dict.values():
+        ans *= (val_cnt+1)
     
-        
-        
+    return ans-1
+            
+            
+    
