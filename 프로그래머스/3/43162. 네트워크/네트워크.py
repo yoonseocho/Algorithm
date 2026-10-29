@@ -1,24 +1,35 @@
-from collections import deque
+from collections import deque, defaultdict
 
 def solution(n, computers):
+    graph = defaultdict(set)
     visited = [False] * n
     
-    def bfs(k):
-        q = deque([k])
-        visited[k] = True
+    for i in range(n):
+        for j in range(n):
+            if computers[i][j]:
+                graph[i].add(j)
+                graph[j].add(i)
+    
+    print(graph)
+    
+    def bfs(num):
+        q = deque([num])
+        visited[num] = True
         
         while q:
-            cur = q.popleft()
+            cur_num = q.popleft()
             
-            for i in range(n):
-                if i != cur and not visited[i] and computers[cur][i]:
-                    q.append(i)
-                    visited[i] = True
+            for c in graph[cur_num]:
+                if c != cur_num and not visited[c]:
+                    visited[c] = True
+                    q.append(c)
+            
     
-    answer = 0
-    for i in range(n):
-        if not visited[i]:
-            bfs(i)
-            answer += 1
+    network_cnt = 0
+    for k in range(n):
+        if not visited[k]:
+            bfs(k)
+            network_cnt += 1
     
-    return answer
+    return network_cnt
+    
