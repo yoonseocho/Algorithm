@@ -2,7 +2,7 @@ from collections import defaultdict
 
 class Solution:
     def coinChange(self, coins: list[int], amount: int) -> int:
-        dp = [float('inf')] * (amount + 1)
+        dp = [float('inf')] * (amount+1)
         dp[0] = 0
         coins.sort()
 
@@ -15,5 +15,4 @@ class Solution:
                 min_coin = min(min_coin, dp[diff]+1)
             dp[i] = min_coin
         
-        return dp[amount] if dp[amount] != float('inf') else -1
-
+        return -1 if dp[amount] == float('inf') else dp[amount]
